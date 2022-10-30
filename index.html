@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<!-- bootstrap v5.0.2 -->
+
+<html lang="en">
+<head>
+
+    <!-- Meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favico icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- icon css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- owl carasoul links -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- fonts links -->
+    <link rel="stylesheet" href="assets/css/font.css">
+    <!-- resposive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <title>Bella Shop E-commerce Template</title>
+
+</head>
+
+<body id="home" class="wide">
+
+    <!--=== Pre Loader Start ===-->
+    <div id="preloader">
+        <div id="loading-center-absolute">
+            <div id="loading-center">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+    </div>
+    <!--=== Pre Loader End ===-->
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-left-side">
+                    <ul class="list-inline">
+                        <li class="icon-user"><a href="profile.html">
+                            <img src="assets/images/icon-1.png" alt=""/> 
+                            <span>Log in</span></a>
+                        </li>
+                        <li class="icon-user"><a href="profile.html">
+                            <img src="assets/images/icon-2.png" alt=""/> 
+                            <span> Not a member? </span> <span class="sign-up">Sign Up</span></a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@yourdomain.com">
+                                <i class="bi bi-envelope"></i> 
+                                <span>smarttech@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bar-right-side">
+                    <ul class="list-inline">
+                        <li class="hidden-xs"><a href="about.html">About</a></li>
+                        <li class="hidden-xs"><a href="blog.html">Blog</a></li>
+                        <li class="hidden-xs"><a href="blog.html">My Account</a></li>
+                        <li class="hidden-xs"><a href="faq.html">FAQ</a></li>
+                        <li class="hidden-xs"><a href="wishlist.html">My Wishlist</a></li>
+                        <li class="dropdown currency">
+                            <select id="currency" name="currency">
+                                <option value="volvo">€ EURO</option>
+                                <option value="saab">$ IUSA</option>
+                                <option value="fiat">৳ TAKA</option>
+                              </select>
+                        </li>
+                        <li class="dropdown flags">
+                            <select id="flag" name="flags">
+                                <option value="image"><img src="assets/images/flag.gif" alt=""/>Eng</option>
+                                <option value="image"><img src="assets/images/flag.gif" alt=""/>Ban</option>
+                                <option value="image"><img src="assets/images/flag.gif" alt=""/>Ind</option>
+                              </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /top bar -->
+
+        <!-- Header start -->
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="container">
+
+                    <!-- Header search start -->
+                    <div class="header-search">
+                        <input type="text" class="form-control" placeholder="What are you looking?">
+                        <button>
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                    <!-- Header search end -->
+
+                    <!-- Logo start -->
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo-sm.png" alt="Bella Shop">
+                        </a>
+                    </div>
+                    <!-- Logo end -->
+
+                    <!-- shopping-cart -->
+
+                    <div class="header-cart">
+                        <div class="cart-wrapper">
+                            <a href="wishlist.html" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="bi bi-heart-fill"></i></a>
+                            <a href="compare-products.html" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="bi bi-arrow-left-right"></i></a>
+                            
+                            <!-- Button to Open the Modal -->
+                            <a href="" class="btn btn-theme-transparent" data-bs-toggle="modal" data-bs-target="#myModal">
+                                <i class="bi bi-cart-fill"></i> <span class="hidden-xs"> 0 item(s) - $0.00 </span> <i class="bi bi-chevron-down down-arrow"></i>
+                            </a>
+                        </div>
+
+                        <!-- mobile-menu -->
+                        <div class="hamburger-icon">
+                            <a href="">
+                                <label for="top-menu-btn" class="btn top-menu-btn btn-theme-transparent"><img src="assets/images/icon-list.png" alt=""></label>
+                            </a>
+                        </div>
+                        <!-- /mobile-menu -->
+
+                    </div>
+                    
+                    <!-- The Modal of shoppint-cart -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog cart-item">
+                            <div class="modal-content cart-item-inner">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header cart-header">
+                                    <img src="assets/images/order-1s.jpg" alt="">
+                                        <h4 class="modal-title cart-title"><a href="">1x Standard Product</a></h4>
+                                        <p>Lorem ipsum dolor</p>
+                                        <h5 class="price">$450.00</h5>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body cart-body">
+                                    <h4>Subtotal</h4>
+                                    <h5 class="price">$450.00</h5>
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer cart-footer">
+                                    <a type="button" class="btn btn-theme-transparent close-btn" data-bs-dismiss="modal">Close</a>
+                                    <a href="#" type="button" class="btn btn-theme-transparent check-btn" data-bs-dismiss="modal">Checkout</a>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /shopping-cart -->
+
+                </div>
+            </div>
+
+            <!-- navigation -->
+            <div class="navigation-wrapper">
+                <div class="container">
+
+                    <!-- Navigation start -->
+                    <nav class="navigation closed clearfix">
+                        <input type="radio" name="slide" id="top-menu-btn">
+                        <input type="radio" name="slide" id="top-cancel-btn">
+                        <ul class="nav sf-menu nav-menubar" id="mySidenav">
+                            <!-- mobile-menu-cancel -->
+                            <label for="top-cancel-btn" class="btn top-cancel-btn"><i class="bi bi-x-lg"></i></label>
+
+                            <li class="active">
+                                <a href="index.html">Homepage</a>
+                                <ul>
+                                    <li><a href="index.html">Homepage 1</a></li>
+                                    <li><a href="index-2.html">Homepage 2</a></li>
+                                    <li><a href="index-3.html">Homepage 3</a></li>
+                                    <li><a href="index-4.html">Homepage 4</a></li>
+                                    <li><a href="index-5.html">Homepage 5</a></li>
+                                    <li><a href="index-6.html">Homepage 6</a></li>
+                                    <li><a href="index-7.html">Homepage 7</a></li>
+                                    <li><a href="index-8.html">Homepage 8</a></li>
+                                    <li><a href="index-9.html">Homepage 9</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="category.html">Shop</a>
+                                <ul>
+                                    <li><a href="category.html">Shop Sidebar Left</a></li>
+                                    <li><a href="category-right.html">Shop Sidebar Right</a></li>
+                                    <li><a href="category-list.html">Shop List View</a></li>
+                                    <li><a href="product-details.html">Product Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                                <ul>
+                                    <li><a href="blog.html">Blog Sidebar Left </a></li>
+                                    <li><a href="blog-right.html">Blog Sidebar Right</a></li>
+                                    <li><a href="blog-post.html">Blog Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a>
+                                <ul>
+                                    <li><a href="portfolio.html">Portfolio 3 columns</a></li>
+                                    <li><a href="portfolio-4col.html">Portfolio 4 columns</a></li>
+                                    <li><a href="portfolio-alt.html">Portfolio Alternate</a></li>
+                                    <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="megamenu"><a href="#">Features</a>
+                                <ul>
+                                    <li class="row">
+                                        <div class="col-md-2">
+                                            <h4 class="block-title"><span>Womens</span></h4>
+                                            <ul>
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Rompers & Jumpsuits</a></li>
+                                                <li><a href="#">Bodysuits</a></li>
+                                                <li><a href="#">Shirts & Blouses</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Blazers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="block-title"><span>Mens</span></h4>
+                                            <ul>
+                                                <li><a href="#">T-Shirts & Vests</a></li>
+                                                <li><a href="#">Sweaters & Cardigans</a></li>
+                                                <li><a href="#">Hoodies & Sweats</a></li>
+                                                <li><a href="#">Coats & Jackets</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Shorts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="block-title"><span>Pages</span></h4>
+                                            <ul>
+                                                <li><a href="shortcodes.html"><strong>Shortcodes</strong></a></li>
+                                                <li><a href="typography.html"><strong>Typography</strong></a></li>
+                                                <li><a href="coming-soon.html"><strong>Coming soon</strong></a></li>
+                                                <li><a href="error-page.html"><strong>404 Page</strong></a></li>
+                                                <li><a href="about.html"><strong>About</strong></a></li>
+                                                <li><a href="login.html"><strong>Login</strong></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h4 class="block-title"><span>Header styles</span></h4>
+                                            <ul>
+                                                <li><a href="index-style-1.html"><strong>Header style 1</strong></a></li>
+                                                <li><a href="index-style-2.html"><strong>Header style 2</strong></a></li>
+                                                <li><a href="index-style-3.html"><strong>Header style 3</strong></a></li>
+                                                <li><a href="index-style-4.html"><strong>Header style 4</strong></a></li>
+                                                <li><a href="index-style-5.html"><strong>Header style 5</strong></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="product-list">
+                                                <div class="media">
+                                                    <a class="pull-left media-link" href="#">
+                                                        <img class="media-object" src="assets/images/top-sellers-2.jpg" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                                        <div class="rating">
+                                                            <span class="star"></span>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+                                                            
+                                                        </div>
+                                                        <div class="price"><span>$400.00</span> <del>$425.00</del></div>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <a class="pull-left media-link" href="#">
+                                                        <img class="media-object" src="assets/images/top-sellers-3.jpg" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                                        <div class="rating">
+                                                            <span class="star"></span>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star-fill"></i>
+                                                            <i class="bi bi-star"></i>
+                                                        </div>
+                                                        <div class="price"><span>$400.00</span> <del>$425.00</del></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="men.html">Men</a></li>
+                            <li><a href="women.html">Women</a></li>
+                            <li><a href="kids.html">Kids</a></li>
+                            <li><a href="new.html">New</a></li>
+                            <li class="sale"><a href="sale.html">Sale</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Navigation start -->
+
+                </div>
+            </div>
+            <!-- /navigation -->
+
+        </header>
+        <!-- /Header start -->
+
+        <!--== CONTENT AREA START ==--> 
+        <div class="content-area">
+
+            <!-- page slide start -->
+            <section class="page-section no-padding slider">
+                <div class="container full-width">
+                    
+                    <div class="main-slider">
+                        <div class="owl-carousel owl-theme ontime-project-carousel" id="main-slider">   
+                            <!-- Slide 1 start -->
+                            <div class="item slide1">
+                                <img class="slide-img" src="assets/images/slide-1.jpg">
+                                <div class="caption">
+                                    <div class="container">
+                                        <div class="div-table">
+                                            <div class="div-cell">
+                                                <div class="caption-content">
+                                                    <h2 class="caption-title">The Biggest</h2>
+                                                    <h3 class="caption-subtitle">Sale</h3>
+                                                    <p class="caption-text">
+                                                        <a class="btn btn-theme" href="#">Shop Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 1 end -->
+
+                            <!-- Slide 2 start -->
+                            <div class="item slide2 alt">
+                                <img class="slide-img" src="assets/images/slide-2.jpg" alt=""/>
+                                <div class="caption">
+                                    <div class="container">
+                                        <div class="div-table">
+                                            <div class="div-cell">
+                                                <div class="caption-content">
+                                                    <h2 class="caption-title">New Arrivals On Sale</h2>
+                                                    <h3 class="caption-subtitle"><span>Summer Collection</span></h3>
+                                                    <div class="price">
+                                                        <span>$</span><ins>49</ins>
+                                                        <span>$</span><del>86</del>
+                                                    </div>
+                                                    <p class="caption-text">
+                                                        <a class="btn btn-theme" href="#">Shop this item Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 end -->
+
+                            <!-- Slide 3 start -->
+                            <div class="item slide3 dark">
+                                <img class="slide-img" src="assets/images/slide-3.jpg" alt=""/>
+                                <div class="caption">
+                                    <div class="container">
+                                        <div class="div-table">
+                                            <div class="div-cell">
+                                                <div class="caption-content">
+                                                    <h2 class="caption-title">New Arrivals On Sale</h2>
+                                                    <h3 class="caption-subtitle"><span>Summer Collection</span></h3>
+                                                    <p class="caption-text">
+                                                        <a class="btn btn-theme" href="#">Shop this item Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 end -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page slide end-->
+
+            <!-- banner-part start -->
+            <section class="banner-part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="thumbnail no-border no-padding thumbnail-banner size-1x3">
+                                <div class="media">
+                                    <a class="media-link" href="#">
+                                        <div class="img-bg" style="background-image: url(assets/images/banner-1.jpg)"></div>
+                                        <div class="caption">
+                                            <div class="caption-wrapper div-table">
+                                                <div class="caption-inner div-cell">
+                                                    <h2 class="caption-title"><span>Lorem Ipsum</span></h2>
+                                                    <h3 class="caption-sub-title"><span>Dolor Sir Amet Percpectum</span></h3>
+                                                    <span class="btn btn-theme btn-theme-sm">Shop Now</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="thumbnail no-border no-padding thumbnail-banner size-1x3">
+                                <div class="media">
+                                    <a class="media-link" href="#">
+                                        <div class="img-bg" style="background-image: url(assets/images/banner-2.jpg)"></div>
+                                        <div class="caption text-right">
+                                            <div class="caption-wrapper div-table">
+                                                <div class="caption-inner div-cell">
+                                                    <h2 class="caption-title"><span>Lorem Ipsum</span></h2>
+                                                    <h3 class="caption-sub-title"><span>Dolor Sir Amet Percpectum</span></h3>
+                                                    <span class="btn btn-theme btn-theme-sm">Shop Now</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner-part end -->
+
+            <!-- featuerd section -->
+            <section class="page-sections">
+                <div class="container">
+                    
+                    <div class="tabs">
+                        <ul id="tabs" class="navs nav-justified-off">
+                            <li class=""><a href="#tab-1" data-toggle-tab>Featured</a></li>
+                            <li class="active"><a href="#tab-1" data-toggle-tab>Newest</a></li>
+                            <li class=""><a href="#tab-1" data-toggle-tab>Top Sellers</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <!-- tab-1 -->
+                        <div class="row">
+                            <!-- grid item -->
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="grid-card">
+                                    <div class="media-images">
+                                        <img src="assets/images/product-1.jpg">
+                                        <span class="icon-view"><strong><i class=""></i></strong></span>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">
+                                            <a href="#">Standard Product Header</a>
+                                        </h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price">
+                                            <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                        </div>
+                                        <div class="buttons my-tab-btn">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- grid item -->
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="grid-card">
+                                    <div class="media-images">
+                                        <img src="assets/images/product-2.jpg">
+                                        <span class="icon-view"><strong><i class=""></i></strong></span>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">
+                                            <a href="#">Standard Product Header</a>
+                                        </h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price">
+                                            <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                        </div>
+                                        <div class="buttons my-tab-btn">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- grid item -->
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="grid-card">
+                                    <div class="media-images">
+                                        <img src="assets/images/product-3.jpg">
+                                        <span class="icon-view"><strong><i class=""></i></strong></span>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">
+                                            <a href="#">Standard Product Header</a>
+                                        </h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price">
+                                            <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                        </div>
+                                        <div class="buttons my-tab-btn">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- grid item -->
+                            <div class="col-xl-3 col-md-6 col-sm-12">
+                                <div class="grid-card">
+                                    <div class="media-images">
+                                        <img src="assets/images/product-4.jpg">
+                                        <span class="icon-view"><strong><i class=""></i></strong></span>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">
+                                            <a href="#">Standard Product Header</a>
+                                        </h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price">
+                                            <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                        </div>
+                                        <div class="buttons my-tab-btn">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+            <!-- /featuerd section -->
+
+            <!-- SHIPPING PAGE -->
+            <section class="page-sections">
+                <div class="container">
+                    <div class="message-box">
+                        <div class="message-box-inner">
+                            <h2>Free shipping on all orders over $45</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /SHIPPING PAGE -->
+
+            <!-- TOP RATED PRODUCTS start -->
+            <section class="top-products">
+                <div class="container">
+                    <h4 class="section-title">
+                    <span>Top rated Products</span>
+                    </h4>
+                
+                    <div class="my-top-products">  
+                        <div class="owl-carousel owl-theme project-carousel">
+                            
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-1.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-1.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-2.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-3.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-4.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-5.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-6.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- items -->
+                            <div class="item">
+                                <div class="img-holder">
+                                    <img src="assets/images/top-rated-3.jpg"  alt="Card image cap">
+                                </div>
+                                <div class="caption text-center">
+                                    <h4 class="caption-title">
+                                        <a href="#">Standard Product Header</a>
+                                    </h4>
+                                    <div class="rating">
+                                        <span class="star"></span>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="price">
+                                        <ins><ins>$400.00</ins> <del>$425.00</del></ins>
+                                    </div>
+                                    <div class="buttons">
+                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="bi bi-heart-fill"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="bi bi-cart-fill"></i>Add to Cart</a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                                        
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- TOP RATED PRODUCTS end -->
+
+            <!-- Recent-post -->
+            <section class="recent-post-page">
+                <div class="container">
+                    <div class="recent-text">	
+                        <a class="btn btn-theme btn-title-more btn-icon-left" href="#">
+                            <i class="bi bi-file-text"></i>See All Posts
+                        </a>
+                        <h2 class="block-title">
+                            <span>Our Recent posts</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- grid item -->
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="recent-post">
+                                <div class="link-image">
+                                    <a href="" class="pull-left">
+                                        <img class="media-object" src="assets/images/recent-post-1.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-category"><a href="#">Shoes</a> / <a href="#">Dress</a></p>
+                                        <h4 class="media-heading"><a href="#">Standard Post Comment Header Here</a></h4>
+                                        <h5 class="media-details">
+                                            Fusce gravida interdum eros a mollis. Sed non lorem varius, volutpat nisl in, laoreet ante.
+                                        </h5>
+                                        <div class="media-meta">
+                                            6th June 2014
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-chat-dots-fill"></i>27</a>
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-heart-fill"></i>18</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grid item -->
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="recent-post">
+                                <div class="link-image">
+                                    <a href="" class="pull-left">
+                                        <img class="media-object" src="assets/images/recent-post-2.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-category"><a href="#">Shoes</a> / <a href="#">Dress</a></p>
+                                        <h4 class="media-heading"><a href="#">Standard Post Comment Header Here</a></h4>
+                                        <h5 class="media-details">
+                                            Fusce gravida interdum eros a mollis. Sed non lorem varius, volutpat nisl in, laoreet ante.
+                                        </h5>
+                                        <div class="media-meta">
+                                            6th June 2014
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-chat-dots-fill"></i>27</a>
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-heart-fill"></i>18</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grid item -->
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="recent-post">
+                                <div class="link-image">
+                                    <a href="" class="pull-left">
+                                        <img class="media-object" src="assets/images/recent-post-3.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-category"><a href="#">Shoes</a> / <a href="#">Dress</a></p>
+                                        <h4 class="media-heading"><a href="#">Standard Post Comment Header Here</a></h4>
+                                        <h5 class="media-details">
+                                            Fusce gravida interdum eros a mollis. Sed non lorem varius, volutpat nisl in, laoreet ante.
+                                        </h5>
+                                        <div class="media-meta">
+                                            6th June 2014
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-chat-dots-fill"></i>27</a>
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-heart-fill"></i>18</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- grid item -->
+                        <div class="col-xl-6 col-md-12 col-sm-12">
+                            <div class="recent-post">
+                                <div class="link-image">
+                                    <a href="" class="pull-left">
+                                        <img class="media-object" src="assets/images/recent-post-4.jpg">
+                                    </a>
+                                    <div class="media-body">
+                                        <p class="media-category"><a href="#">Shoes</a> / <a href="#">Dress</a></p>
+                                        <h4 class="media-heading"><a href="#">Standard Post Comment Header Here</a></h4>
+                                        <h5 class="media-details">
+                                            Fusce gravida interdum eros a mollis. Sed non lorem varius, volutpat nisl in, laoreet ante.
+                                        </h5>
+                                        <div class="media-meta">
+                                            6th June 2014
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-chat-dots-fill"></i>27</a>
+                                            <span class="divider">/</span><a href="#"><i class="bi bi-heart-fill"></i>18</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /Recent-post -->
+
+            <!-- BRAND & CLIENTS start -->
+            <section class="top-products brand">
+                <div class="container">
+                    <h2 class="section-title"><span>Brand &amp; Clients</span></h2>
+                    <div class="partners-carousel">
+                        <div class="owl-carousel owl-theme brand-carousel">
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                            <div><a href="#"><img src="assets/images/brand-logo.jpg" alt=""/></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- BRAND & CLIENTS end -->
+
+            <!-- our-client start -->
+            <section class="our-client">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- client grid -->
+                        <div class="col-xl-4 col-md-12">
+                            <div class="product-list highly-product">
+                                <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                                <h4 class="block-title"><span>Top Sellers</span></h4>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-1.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-2.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-3.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- client grid -->
+                        <div class="col-xl-4 col-md-12">
+                            <div class="product-list highly-product">
+                                <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                                <h4 class="block-title"><span>Top Sellers</span></h4>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-4.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-5.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-6.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- client grid -->
+                        <div class="col-xl-4 col-md-12">
+                            <div class="product-list highly-product">
+                                <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                                <h4 class="block-title"><span>Top Sellers</span></h4>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-7.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-8.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <a class="pull-left media-link" href="#">
+                                        <img class="media-object" src="assets/images/top-sellers-9.jpg" alt="">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">Standard Product Header</a></h4>
+                                        <div class="rating">
+                                            <span class="star"></span>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                        <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- our-client end -->
+
+            <!-- last-page start -->
+            <section class="last-page">
+                <div class="container">
+                    <div class="row blocks shop-info-banners">
+                        <div class="col-xl-4 col-md-12 col-sm-12">
+                            <div class="block">
+                                <div class="media">
+                                    <div class="pull-right"><i class="bi bi-gift-fill"></i></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Buy 1 Get 1</h4>
+                                        Proin dictum elementum velit. Fusce euismod consequat ante.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-sm-12">
+                            <div class="block">
+                                <div class="media">
+                                    <div class="pull-right"><i class="bi bi-chat-quote-fill"></i></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Call to Free</h4>
+                                        Proin dictum elementum velit. Fusce euismod consequat ante.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-12 col-sm-12">
+                            <div class="block">
+                                <div class="media">
+                                    <div class="pull-right"><i class="bi bi-trophy-fill"></i></div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Money Back!</h4>
+                                        Proin dictum elementum velit. Fusce euismod consequat ante.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- last-page end -->
+
+        </div>
+        <!--== CONTENT AREA END ==-->
+
+        <!-- Footer start -->
+        <footer class="footer">
+            <div class="footer-widgetes">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-xl-3 col-md-12 col-sm-12">
+                            <div class="widget">
+                                <h4 class="widget-title">About Us</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit. Sed commodo vel mauris vel dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <ul class="social-icons">
+                                    <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
+                                    <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#" class="pinterest"><i class="bi bi-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-sm-12">
+                            <div class="widget my-footer">
+                                    <h4 class="widget-title">News Letter</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Enter Your Email and Get $10 Cash"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-theme btn-theme-transparent subscribe">Subscribe</button>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-sm-12">
+                            <div class="widget widget-categories my-footer">
+                                <h4 class="widget-title">Information</h4>
+                                <ul>
+                                    <li><a href="about.html"><i class="bi bi-arrow-right-circle-fill"></i>About Us</a></li>
+                                    <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i>Delivery Information</a></li>
+                                    <li><a href="contact.html"><i class="bi bi-arrow-right-circle-fill"></i>Contact Us</a></li>
+                                    <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i>Terms and Conditions</a></li>
+                                    <li><a href="#"><i class="bi bi-arrow-right-circle-fill"></i>Private Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-12 col-sm-12">
+                            <div class="widget widget-tag-cloud">
+                                <h4 class="widget-title">Item Tags</h4>
+                                <ul>
+                                    <li><a href="#">Fashion</a></li>
+                                    <li><a href="#">Jeans</a></li>
+                                    <li><a href="#">Top Sellers</a></li>
+                                    <li><a href="#">E commerce</a></li>
+                                    <li><a href="#">Hot Deals</a></li>
+                                    <li><a href="#">Supplier</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Theme</a></li>
+                                    <li><a href="#">Website</a></li>
+                                    <li><a href="#">Isamercan</a></li>
+                                    <li><a href="#">Themeforest</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-meta">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-7 col-md-6 col-sm-12">
+                            <div class="copyright">2022 SMART TECHNOLOGY | All Rights Reserved | Rammo Paul</div>
+                        </div>
+                        <div class="col-xl-5 col-md-6 col-sm-12">
+                            <div class="payments">
+                                <ul>
+                                    <li><img src="assets/images/visa.jpg" alt=""/></li>
+                                    <li><img src="assets/images/mastercard.jpg" alt=""/></li>
+                                    <li><img src="assets/images/paypal.jpg" alt=""/></li>
+                                    <li><img src="assets/images/american-express.jpg" alt=""/></li>
+                                    <li><img src="assets/images/visa-electron.jpg" alt=""/></li>
+                                    <li><img src="assets/images/maestro.jpg" alt=""/></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+        
+    </div>
+    <!-- /Wrapper -->
+
+    <!--=== Scroll Top Start ===-->
+    <div id="stop" class="scrollTop">
+        <span><a href=""></a></span>
+    </div>
+    <!--=== Scroll Top End ===-->
+
+    <!-- js links -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- custome js -->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- scrolltop js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scroll-top.js"></script>
+    
+</body>
+</html>
